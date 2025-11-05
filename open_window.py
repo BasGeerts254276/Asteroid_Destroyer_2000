@@ -1,6 +1,6 @@
 import arcade
 
-# Constants
+#Constants
 WINDOW_WIDTH = 1280
 WINDOW_HEIGHT = 720
 WINDOW_TITLE = "Asteroid Destroyer 2000"
@@ -39,4 +39,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main()  
