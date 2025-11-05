@@ -1,0 +1,4 @@
+SCREEN_WIDTH = 1000
+SCREEN_HEIGHT = 850
+SCREEN_TITLE = "Asteroid destroyer 2000"
+
