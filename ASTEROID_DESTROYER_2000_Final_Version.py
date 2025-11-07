@@ -51,7 +51,7 @@ class GameView(arcade.View):
         """Set up the game here. Call this function to restart the game."""
 
         # Create the player sprite
-        self.player_sprite = arcade.Sprite(r"C:\Users\bas\OneDrive\assets\spaceship alien.png", scale=0.1)
+        self.player_sprite = arcade.Sprite("assets\spaceship alien.png", scale=0.1)
         self.player_sprite.center_x = WINDOW_WIDTH / 2
         self.player_sprite.center_y = WINDOW_HEIGHT / 2
 
@@ -65,7 +65,7 @@ class GameView(arcade.View):
         self.all_sprites.append(self.player_sprite)
 
         # --- Create an asteroid ---
-        asteroid_sprite = arcade.Sprite(r"C:\Users\bas\OneDrive\assets\asteroid.png", scale=0.15)
+        asteroid_sprite = arcade.Sprite("assets\asteroid.png", scale=0.15)
 
         # Start it just off the right side of the screen
         asteroid_sprite.center_x = WINDOW_WIDTH + 50
@@ -125,7 +125,7 @@ class GameView(arcade.View):
         # inside on_key_press under the last elif
         elif key == arcade.key.LSHIFT:
             # shoot laser
-            laser = arcade.Sprite(r"C:\Users\bas\OneDrive\assets\laser_sprite.png", scale=0.2)
+            laser = arcade.Sprite("assets\laser_sprite.png", scale=0.2)
 
             laser.center_x = self.player_sprite.center_x
             laser.center_y = self.player_sprite.center_y
@@ -152,4 +152,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
